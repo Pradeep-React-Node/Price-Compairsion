@@ -614,7 +614,7 @@ section.intro img {
       background: #B78D65; }
       
       th {
-        padding: 1em;
+        padding: .2em;
       }
     
     
@@ -694,7 +694,7 @@ section.intro img {
     table {
         background-color: transparent;
         border-collapse:collapse;
-          font-family: Arial, Helvetica, sans-serif
+          font-family: "Times New Roman", Times, serif
     }
     
     th {
@@ -743,8 +743,8 @@ section.intro img {
         }
     
         .dcf-table-bordered td, .dcf-table-bordered th, .dcf-table-striped td, .dcf-table-striped th {
-          padding-left: 1em;
-          padding-right: 1em
+          padding-left: 0.1em;
+          padding-right: 0.1em
         }
     
         .dcf-table-bordered tr:not(:last-child), .dcf-table-striped tr:not(:last-child) {
@@ -770,7 +770,7 @@ section.intro img {
         }
     
         .dcf-table-bordered thead th {
-          padding-top: 1.33em
+          padding-top: 0.11em
         }
     
         .dcf-wrapper-table-scroll {
@@ -960,3 +960,100 @@ section.intro img {
         padding: 5px 8%;
         margin-top: 20px;
       }
+
+td.brline a:hover {
+    color: #e5443d;
+}
+
+td.brline a {
+    color: #ee7e35;
+}
+
+tr.add_ns_lc {
+    color: #fff;
+    background: #e5443d;
+}
+
+.sgg_abc  {
+    background: #f6f6f5;
+    padding: 10px;
+}
+.sgg_abc p {
+    margin: 1px;
+    text-align: center;
+}
+.sgg_abc h3 {
+    text-align: center;
+}
+.sgg_abcd h3 {
+    text-align: center;
+}
+.sgg_abcd p {
+    text-align: center;
+    margin: 1px;
+    color: #000;
+}
+.sgg_abcd {
+    background: #69bfe3;
+    color: #000;
+    padding: 10px;
+}
+/* .add_sect-tt td:first-child {
+    text-align: left;
+    font-weight: 600;
+    width: 20% !important;
+} */
+
+/* .aa{
+    display:flexbox;
+} */
+
+
+/* stkey heder  */
+
+
+    .fixTableHead {
+      overflow-y: auto;
+      height: 100vh;
+    }
+    .fixTableHead .stop {
+      position: sticky;
+      top: 0;
+    }
+    .fixTableHead .stop1 {
+      position: sticky;
+      top: 1;
+    }
+    .fixTableHead .stop2 {
+      position: sticky;
+      top: 2;
+    }
+    .fixTableHead .stop3 {
+      position: sticky;
+      top: 3;
+    }
+    .fixTableHead .stop4 {
+      position: sticky;
+      top: 4;
+    }
+    /* table {
+      border-collapse: collapse;        
+      width: 100%;
+    }
+    th,
+    td {
+      padding: 8px 15px;
+      border: 2px solid #529432;
+    }
+    th {
+      background: #ABDD93;
+    } */
+  .bi{
+    width: 10px;
+  }
+
+  /* package.js color table  */
+ .colorTable2 {
+    background: "#e8f5e6";
+     text-align:"center"
+  }

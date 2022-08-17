@@ -26,7 +26,6 @@ const PDFGenerate = () => {
     console.log("know thw lone", stateData)
     return (
         <>
-
             <div className="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
                 <div className="container py-5">
                     <h1 className="display-1 text-white animated slideInDown">PDF Generate</h1>
@@ -38,18 +37,17 @@ const PDFGenerate = () => {
                     </nav>
                 </div>
             </div>
-
-            <div class="container" id="content">
+            <div className="container " id='content'>
                 <div class="row">
                     <div class="col-md-12">
-                        <div className="col-md-12 text-left">
+                        <div className="col-md-12 text-center">
                             <p className="sect_mt_title" style={{ 'paddingBottom': '20px' }}>	We have selected a custom package that is right-sized <br /> for your unique security, productivity, and budgetary requirements.</p>
                             <p className="sect_hn_title" style={{}}>Your custom package is comprised of:</p>
-                            <p className="sect_gm_title" style={{ 'color': 'green', 'padding': '2px 0', 'lineHeight': '' }}>{productLine === "1" ? "Microsoft 365 for Business" : productLine === "0" ? "Microsoft 365 for Enterprise" : "Office 365 for Enterprise"} <br />
-                                {productPlan === "22" ? "Premium" : productPlan === "6" ? "Basic" : "Standard"} <br />
+                            <p className="sect_gm_title" style={{ 'color': 'green', 'padding': '2px 0', 'lineHeight': '' }}>{productLine === "1" ? "Microsoft 365 for Business" : productLine === "1.0" ? "Microsoft 365 for Enterprise" : "Office 365 for Enterprise"} <br />
+                                {stateData.stateData.plan} <br />
                                 and <br />
-                                {addOption === "0" ? "Azure Active Directory Premium P1 (Included)" : "Azure Active Directory Premium P2 (Add-on)"} <br />
-                                {saasalert === "2.50" ? `coupled with 
+                                {addOption === "0" ? "Azure Active Directory Premium P1 (Included)" : addOption === "6" ? "Azure Active Directory Premium P1 (Add-on)" : addOption === "0.0" ? " Add On-(None)" : "Azure Active Directory Premium P2 (Add-on)"} <br />
+                                {saasalert ? `coupled with 
                                 the protectionof Microsoft Security Plan`: ""}
                             </p>
                             <p className="sect_n_title" style={{ 'fontWeight': 'normal' }}>Priced at</p>
@@ -61,7 +59,6 @@ const PDFGenerate = () => {
                             <p className="lastsect" style={{ 'fontWeight': 'lighter', 'paddingTop': '20px', 'wordSpacing': '6px' }}>In addition to savings, you'll receive the essential<br /> security features offered by Microsoft,<br /> supplemented by a third party solution objective,<br /> constant, real-time monitoring of the SaaS<br /> applications that are critical to small-to-medium<br /> businesses like yours.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -72,8 +69,6 @@ const PDFGenerate = () => {
                     </div>
                 </div>
             </div>
-
-
         </>
     );
 

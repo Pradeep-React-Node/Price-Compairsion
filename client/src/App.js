@@ -6,11 +6,13 @@ import Home from './pages/Home';
 import SinglePackage from "./pages/SinglePackage";
 import Package from "./pages/Package";
 import PDFGenerate from "./pages/PDFGenerate";
+import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+	  <ScrollToTop>
         <Header/>
           <Routes>
             <Route path="/" element={<Home/>} exact />
@@ -19,6 +21,7 @@ function App() {
             <Route path="/pdf-generate" element={<PDFGenerate/>} exact />   
           </Routes>
         <Footer/> 
+		</ScrollToTop>
         </BrowserRouter>    
     </div>
   );
